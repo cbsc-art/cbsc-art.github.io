@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Andaman & Nicobar Tourism</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Andaman & Nicobar Tourism</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#regions">Regions</a>
+      <a href="#packages">Packages</a>
+      <a href="#activities">Activities</a>
+      <a href="#booking">Flights</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome to Paradise</h2>
+    <p>Discover beaches, adventures & culture in the Andaman & Nicobar Islands</p>
+    <a href="#packages" class="btn">View Packages (KWD)</a>
+  </section>
+
+  <section id="regions">
+    <h2>Popular Regions</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600470751643-60f4a6c38cbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Port Blair">
+        <h3>Port Blair</h3>
+        <p>The capital city with history, museums, and vibrant markets.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581894474255-779d9d3ed1b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Havelock Island">
+        <h3>Havelock</h3>
+        <p>Home to Radhanagar Beach – Asia’s best-rated beach.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1593085512155-59db9a4f5b71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Neil Island">
+        <h3>Neil Island</h3>
+        <p>Peaceful island famous for coral reefs & sunsets.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages">
+    <h2>Travel Packages (KWD)</h2>
+    <p class="subtle">(All prices in Kuwaiti Dinar – د.ك)</p>
+    <div class="cards">
+      <div class="card price-card">
+        <h3>Romantic Getaway</h3>
+        <p>5 Days / 4 Nights</p>
+        <ul>
+          <li>Havelock + Neil Island</li>
+          <li>Candlelight Dinner</li>
+          <li>Private Airport Transfers</li>
+        </ul>
+        <p class="price"><strong>د.ك 130</strong> per couple</p>
+        <a href="#booking" class="btn small">Book Enquiry</a>
+      </div>
+      <div class="card price-card">
+        <h3>Adventure Explorer</h3>
+        <p>7 Days / 6 Nights</p>
+        <ul>
+          <li>Scuba Diving, Kayaking</li>
+          <li>Baratang Limestone Caves</li>
+          <li>Island Hopping</li>
+        </ul>
+        <p class="price"><strong>د.ك 185</strong> per person</p>
+        <a href="#booking" class="btn small">Book Enquiry</a>
+      </div>
+      <div class="card price-card">
+        <h3>Family Fun Tour</h3>
+        <p>6 Days / 5 Nights</p>
+        <ul>
+          <li>Port Blair + Havelock</li>
+          <li>Glass-bottom Boat Ride</li>
+          <li>Breakfast Included</li>
+        </ul>
+        <p class="price"><strong>د.ك 150</strong> (up to 4 people)</p>
+        <a href="#booking" class="btn small">Book Enquiry</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="activities">
+    <h2>Activities (KWD)</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1574847461454-5a69c1742c0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Scuba Diving">
+        <h3>Scuba Diving</h3>
+        <p>Explore vibrant coral reefs with certified instructors.</p>
+        <p class="price">From <strong>د.ك 35</strong> per person</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600195077747-4d414ab7f75a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Snorkeling">
+        <h3>Snorkeling</h3>
+        <p>Shallow reef adventures at North Bay & Elephant Beach.</p>
+        <p class="price">From <strong>د.ك 12</strong> per person</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1587502536263-40a0181c8c7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Trekking">
+        <h3>Trekking</h3>
+        <p>Guided trails through tropical forests & caves.</p>
+        <p class="price">From <strong>د.ك 10</strong> per person</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2>Book Your Flight</h2>
+    <p class="subtle">Search request form (quotes provided in د.ك / KWD)</p>
+    <form class="booking-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+      <label for="from">From (City / Airport)</label>
+      <input type="text" id="from" required>
+      <label for="to">To</label>
+      <input type="text" id="to" value="Port Blair (IXZ)" readonly>
+      <label for="date">Travel Date</label>
+      <input type="date" id="date" required>
+      <label for="passengers">Passengers</label>
+      <input type="number" id="passengers" min="1" value="1" required>
+      <button type="submit">Request Quote in KWD</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@andamantourism.com">info@andamantourism.com</a></p>
+    <p>Phone (Kuwait): +965 5555 0000</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Andaman & Nicobar Tourism. All rights reserved.</p>
+  </footer>
+</body>
+</html>
